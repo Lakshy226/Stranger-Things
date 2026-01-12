@@ -12,18 +12,18 @@ body {
 }
 .hero {
     position: relative;
-    width: 320px;
-    height: 420px;
+    width: min(90vw, 380px);
+    aspect-ratio: 3 / 4;
     overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 40px 120px rgba(120, 0, 0, 0.4);
+    border-radius: 14px;
+    box-shadow: 0 40px 120px rgba(120, 0, 0, 0.45);
 }
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
     background: radial-gradient(
-        circle at center,
+        circle,
         transparent: 40%,
         rgba(120, 0, 0, 0.45)
     );
