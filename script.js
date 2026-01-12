@@ -19,7 +19,7 @@ hero.addEventListener("pointerenter", (e) => {
   x = targetX;
   y = targetY;
 
-  baseRadius = rect.width * 0.28;
+  baseRadius = rect.width * 0.12;
   radius = baseRadius;
 });
 
@@ -41,8 +41,8 @@ function animate() {
   y += (targetY - y) * 0.08;
 
   // Subtle pulse
-  radius += pulseDir * 0.3;
-  if (radius > baseRadius + 12 || radius < baseRadius - 8) {
+  radius += pulseDir * 0.2;
+  if (radius > baseRadius + 6 || radius < baseRadius - 4) {
     pulseDir *= -1;
   }
 
