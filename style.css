@@ -12,11 +12,8 @@ body {
 }
 .hero {
     position: relative;
-    width: min(90vw, 380px);
-    aspect-ratio: 3 / 4;
-    overflow: hidden;
-    border-radius: 14px;
-    box-shadow: 0 40px 120px rgba(120, 0, 0, 0.45);
+    width: 100vw;
+    height: 100vh;
 }
 .hero::after {
     content: "";
@@ -41,6 +38,6 @@ body {
 .reveal {
     z-index: 2;
     filter: contrast(135%) saturate(160%);
-    clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 50% 50%);
     will-change: clip-path;
 }
